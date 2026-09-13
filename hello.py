@@ -1,1 +1,1 @@
-print("Hello, I am Arpitha! My coding journey started today!")
+print("Arpitha! My coding journey started today!")
