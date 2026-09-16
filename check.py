@@ -1,12 +1,12 @@
-# Ask user for input
-fruit = input("Enter a fruit name: ")
+# Smart fruit checker - works with any case!
+fruit = input("Enter a fruit name: ").strip().lower()
 
-if fruit == "Apple":
+if fruit == "apple":
     print("It's Apple! Red and juicy!")
-elif fruit == "Banana":
+elif fruit == "banana":
     print("It's Banana! Yellow!")
 else:
-    print(f"Oh, {fruit} is different! Nice!")
+    print(f"Oh, {fruit.title()} is different! Nice!")
 
 print("Thanks for playing!")
 
