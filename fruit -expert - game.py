@@ -1,5 +1,4 @@
-# Fruit Expert Game - by Arpitha
-# Level 3 - Score Counter
+Level 3 - Score Counter
 
 count = 0
 
@@ -32,3 +31,4 @@ while True:
         print(f"Wow, {fruit.title()} is new! Added to your list!")
 
 print(f"Thanks for playing, Arpitha! Total score: {count}")
+
