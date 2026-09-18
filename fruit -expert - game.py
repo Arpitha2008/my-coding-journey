@@ -1,34 +1,41 @@
-Level 3 - Score Counter
-
+basket = []
 count = 0
+
+print("Welcome to Fruit Basket Game, Arpitha! 🧺")
 
 while True:
     fruit = input("\nEnter fruit (or 'quit' to stop): ").strip().lower()
     
     if fruit == "quit":
-        print(f"\nBye! Game over! You tasted {count} fruits!")
-        if count >= 5:
-            print("Wow Arpitha, you are a FRUIT EXPERT! 🍎👑")
-        else:
-            print(f"Good job! Try to taste 5 fruits next time!")
         break
     
+    if fruit == "":
+        print("Oops, you typed nothing! Try again.")
+        continue
+
+    basket.append(fruit)
     count = count + 1
     
     if fruit == "apple":
-        print("🍎 Apple! Red and crunchy!")
+        print("🍎 Apple added to basket!")
     elif fruit == "banana":
-        print("🍌 Banana! Yellow and sweet!")
+        print("🍌 Banana added!")
     elif fruit == "mango":
-        print("🥭 Mango! King of fruits!")
+        print("🥭 Mango! King added!")
     elif fruit == "litchi":
-        print("Litchi! Juicy and from Bihar!")
-    elif fruit == "orange" or fruit == "ornage":
-        print("🍊 Orange! Vitamin C power!")
-    elif fruit == "grapes":
-        print("🍇 Grapes! Small but mighty!")
+        print("Litchi! Bihar special added!")
     else:
-        print(f"Wow, {fruit.title()} is new! Added to your list!")
+        print(f"{fruit.title()} added to your basket!")
 
-print(f"Thanks for playing, Arpitha! Total score: {count}")
+print("\n--- GAME OVER ---")
+print(f"You collected {count} fruits!")
+print(f"Your basket: {basket}")
 
+if count >= 5:
+    print("Wow Arpitha, your basket is FULL! You are FRUIT QUEEN! 👑")
+else:
+    print("Nice basket! Collect 5 to become Queen!")
+
+# Bonus: Show unique fruits
+unique = list(set(basket))
+print(f"Unique fruits you tried: {unique}")
