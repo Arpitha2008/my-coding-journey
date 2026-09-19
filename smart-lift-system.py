@@ -1,4 +1,4 @@
-# Smart College Lift - Problem Solver
+Smart College Lift - Problem Solver
 capacity = 8
 current = 0
 queue = []
